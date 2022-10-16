@@ -8,7 +8,7 @@ sudo cp -R wordpress/* /var/www/html
 
 sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 775 /var/www/html
-
+sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 sudo rm -rf /var/www/html/index.html
 
 
