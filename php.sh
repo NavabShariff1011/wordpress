@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt install -y php libapache2-mod-php php-mysql
-touch /var/www/html/info.php
+sudo touch /var/www/html/info.php
 cat << EOF > /var/www/html/info.php
    <?php
    // Show all information, defaults to INFO_ALL

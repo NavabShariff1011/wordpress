@@ -20,7 +20,7 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON $dbname. * TO '$username'@'localhost' WIT
 
 sudo mysql -e "FLUSH PRIVILEGES;"
 
-cat <<EOF > /var/www/html/wordpress/wp-config.php
+cat <<EOF > /var/www/html/wordpress/wp-config-sample.php
 <?php
 define( 'DB_NAME', '$dbname' );
 
