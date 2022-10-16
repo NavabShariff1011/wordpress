@@ -8,7 +8,7 @@ sudo mysql -e "CREATE DATABASE $dbname;"
 
 read -p  "enter user name": dbusername
 
-export username=$USERNAME
+export username=$dbusername
 
 read -p "enter password for user": PASSWD
 
