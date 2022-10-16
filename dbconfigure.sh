@@ -16,7 +16,7 @@ export passwd=$PASSWD
 
 sudo mysql -e "CREATE USER '$username'@'localhost' IDENTIFIED BY '$passwd';"
 
-sudo mysql -e "GRANT ALL PRIVILEGES ON $dbname. * TO '$username'@'localhost' WITH GRANT OPTION;"
+sudo mysql -e "GRANT ALL PRIVILEGES ON *.* TO '$username'@'localhost' WITH GRANT OPTION;"
 
 sudo mysql -e "FLUSH PRIVILEGES;"
 
@@ -118,3 +118,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
 EOF
+sudo chmod 755 /var/www/html/wp-config-sample.php
+sudo systemctl restart mariadb
+
